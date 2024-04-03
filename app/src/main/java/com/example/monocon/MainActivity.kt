@@ -46,20 +46,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-//        // The following code demonstrates the usage of Java logging APIs to initialize logging to verbose
-//        // level and then set it to info level. Logging is terminated when the app activity is destroyed.
-//        SNPE.logger.initializeLogging(
-//            applicationContext as Application,
-//            NeuralNetwork.LogLevel.LOG_VERBOSE
-//        )
-//        SNPE.logger.setLogLevel(NeuralNetwork.LogLevel.LOG_INFO)
-//
-//        if (savedInstanceState == null) {
-//            val transaction = fragmentManager.beginTransaction()
-//            transaction.add(R.id.main_content, ModelCatalogueFragment.create())
-//            transaction.commit()
-//        }
-
         previewSurface = binding.previewSurface
         surfaceHolder = previewSurface.holder
 
